@@ -1,4 +1,4 @@
-Learning project from course Angular (published on youtube/ udemy by ZacznijProgramować ) 
+Learning project from Angular course (published on youtube/ udemy by ZacznijProgramować ) 
 
 
 ------------------
