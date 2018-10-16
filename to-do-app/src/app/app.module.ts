@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AddTaskComponent } from './add-task/add-task.component';
 import { ToDoTaskComponent } from './to-do-task/to-do-task.component';
 import { DoneTaskComponent } from './done-task/done-task.component';
+import { TasksService } from './services/tasks.service';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { DoneTaskComponent } from './done-task/done-task.component';
   imports: [
     BrowserModule, FormsModule
   ],
-  providers: [],
+  providers: [TasksService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

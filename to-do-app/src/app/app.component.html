@@ -12,29 +12,29 @@
 
   <div class="container">
 
-  <div class="row">
-      <div class="col">
-      <br><br>
-  <h4>MOJA LISTA ZADAŃ</h4>
-  <br><br>
-  </div>
-  </div>
-
     <div class="row">
       <div class="col">
-        <app-add-task (emitTask)="add($event)"></app-add-task>
+        <br><br>
+        <h4>MOJA LISTA ZADAŃ</h4>
+        <br><br>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-8">
+        <app-add-task></app-add-task>
         <br><br>
       </div>
     </div>
 
     <div class="row">
 
-      <div class="col-4">
-        <app-to-do-task [tasksList]="tasksList" (emitDone)="done($event)" (emitRemove)="remove($event)"></app-to-do-task>
+      <div class="col-5">
+        <app-to-do-task></app-to-do-task>
       </div>
 
-      <div class="col-4">
-        <app-done-task [tasksDone]="tasksDone"></app-done-task>
+      <div class="col-5">
+        <app-done-task></app-done-task>
       </div>
 
     </div>

@@ -1,10 +1,10 @@
 li {
-  background: lightgray;
-
+  background:  #f9ebeb;
+  margin: 5px;
 }
 
 .odd-li {
-  background: lightblue;
-
+  background: #f3d8d8;
+  margin: 5px;
 }
 

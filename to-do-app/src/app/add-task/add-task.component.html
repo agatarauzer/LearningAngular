@@ -1,5 +1,6 @@
-<div>
-
-  <input [(ngModel)]="newTask">
-  <button (click)="add()">Dodaj</button>
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Wpisz zadanie..." [(ngModel)]="newTask">
+  <div class="input-group-append">
+    <button type="button" class="btn btn-outline-secondary btn-sm" (click)="add()">Dodaj</button>
+  </div>
 </div>
