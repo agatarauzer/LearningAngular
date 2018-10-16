@@ -1,3 +1,7 @@
+Learning project from Angular course (published on youtube/ udemy by ZacznijProgramować ) 
+
+
+------------------
 # ToDoApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.4.
