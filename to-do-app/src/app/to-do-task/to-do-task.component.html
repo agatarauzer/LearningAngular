@@ -1,7 +1,7 @@
 <ng-container *ngIf="tasksList.length > 0; else noTask">
   <p>Zadania do wykonania: {{tasksList.length}}</p>
   <ul class="list-group">
-    <li class="list-group-item" *ngFor="let task of tasksList; let odd = odd" [ngClass]="{'odd-li': odd }">
+    <li class="list-group-item" appDate [date]="task.created" *ngFor="let task of tasksList; let odd = odd" [ngClass]="{'odd-li': odd }">
         {{task.name}}
       <div class="btn-toolbar float-right" role="toolbar">
         <div class="btn-group mr-2 btnFlo">

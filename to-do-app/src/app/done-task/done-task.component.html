@@ -1,6 +1,8 @@
 <p>Zadania zrealizowane: {{ tasksDone.length }}</p>
 <ul class="list-group">
-  <li class="list-group-item" *ngFor="let task of tasksDone; let odd = odd" [ngClass]="{'odd-li': odd }">
-    {{task.name}}
+  <li class="list-group-item" appDate [date]="task.end" *ngFor="let task of tasksDone; let odd = odd" [ngClass]="{'odd-li': odd }">
+    <ul>
+      <li appChecked>{{task.name}}</li>
+    </ul>
   </li>
 </ul>
