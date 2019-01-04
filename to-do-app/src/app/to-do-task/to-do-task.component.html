@@ -1,8 +1,8 @@
 <ng-container *ngIf="tasksList.length > 0; else noTask">
   <p>Zadania do wykonania: {{tasksList.length}}</p>
   <ul class="list-group">
-    <li class="list-group-item" appDate [date]="task.created" *ngFor="let task of tasksList; let odd = odd" [ngClass]="{'odd-li': odd }">
-        {{task.name}}
+    <li class="list-group-item" appDate [date]="task.created" *ngFor="let task of tasksList | sortName; let odd = odd" [ngClass]="{'odd-li': odd }">
+        {{task.name | transformTask: '!'}}
       <div class="btn-toolbar float-right" role="toolbar">
         <div class="btn-group mr-2 btnFlo">
           <button type="button" class="btn btn-outline-secondary btn-sm " (click)="remove(task)">Usuń</button>

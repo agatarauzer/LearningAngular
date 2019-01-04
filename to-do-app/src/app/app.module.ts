@@ -8,6 +8,10 @@ import { DoneTaskComponent } from './done-task/done-task.component';
 import { TasksService } from './services/tasks.service';
 import { CheckedDirective } from './shared/checked.directive';
 import { DateDirective } from './shared/date.directive';
+import { TransformTaskPipe } from './shared/transform-task.pipe';
+import { SortNamePipe } from './shared/sort-name.pipe';
+import { HttpService } from './services/http.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,12 +20,16 @@ import { DateDirective } from './shared/date.directive';
     ToDoTaskComponent,
     DoneTaskComponent,
     CheckedDirective,
-    DateDirective
+    DateDirective,
+    TransformTaskPipe,
+    SortNamePipe
   ],
   imports: [
-    BrowserModule, FormsModule
+    BrowserModule,
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [TasksService],
+  providers: [TasksService, HttpService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
